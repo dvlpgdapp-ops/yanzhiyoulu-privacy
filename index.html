@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>言之有錄 隱私權政策</title>
+<style>
+:root { --bg:#fff; --fg:#1d1d1f; --muted:#6e6e73; --link:#0066cc; --line:#e5e5ea; }
+@media (prefers-color-scheme: dark) { :root { --bg:#000; --fg:#f5f5f7; --muted:#a1a1a6; --link:#4da3ff; --line:#2c2c2e; } }
+body { background:var(--bg); color:var(--fg); margin:0; font:17px/1.75 -apple-system, "PingFang TC", "Noto Sans TC", sans-serif; }
+main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+h1 { font-size:28px; margin:0 0 8px; }
+h2 { font-size:20px; margin:36px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+p { margin:0 0 14px; }
+a { color:var(--link); word-break:break-all; }
+code { font-size:15px; }
+.meta { color:var(--muted); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+<h1>「言之有錄」隱私權政策</h1>
+<p class="meta">發行者：「言之有錄」開發者<br>聯絡方式：<a href="mailto:dvlpgdapp@gmail.com">dvlpgdapp@gmail.com</a><br>生效日期：2026-10-09</p>
+<h2>資料保存與用途</h2>
+<p>「言之有錄」讓您建立專案、會議、與會人員、錄音、逐字稿及報告。您輸入的姓名、聯絡資料、會議內容、匯入附件、錄音、編輯版本與相關設定，預設保存在這支裝置的 App 儲存空間。這些內容用於顯示、編輯、播放、搜尋及產生您指定的輸出。</p>
+<p>本版沒有自有會員登入伺服器。觀看獎勵廣告取得的六小時使用期限保存在這支裝置；它不是 Apple 訂閱，也沒有跨裝置會員帳戶同步。</p>
+<p>「資料在本機」不表示所有功能都離線。Gemini、Google Drive、廣告與同意管理、系統分享及備份可能涉及資料傳送，說明如下。</p>
+<h2>麥克風、錄音與本機處理</h2>
+<p>開始錄音或麥克風測試需要 iOS 麥克風權限。您啟動錄音後，App 可在鎖屏或切換 App 時繼續錄音，直到您結束、系統中斷或程序停止。錄音分段與 MP3 轉存由裝置處理；錄音保存本身不會自動送交 Gemini。</p>
+<p>您可在 iOS 設定撤回麥克風權限；撤回後無法繼續使用需要麥克風的功能。錄音可能包含其他人的個人資料，請在取得所需授權後再錄製或上傳。</p>
+<h2>Gemini 逐字稿與報告</h2>
+<p>當您送出真實 AI 工作，App 使用您自行加入的 Gemini API 金鑰，直接連接 Google Gemini Developer API。轉逐字稿會上傳所選音檔及提示詞；產生報告會送出所選逐字稿、模板與設定包含的相關文字，例如會議資訊及選用的歷史內容。結果及工作狀態會保存於裝置。示範 AI 模式使用內建結果，不把該工作內容傳給 Gemini。</p>
+<p>金鑰以請求標頭交給 Google 驗證，保存在這支裝置的 iOS Keychain；不放進 App 匯出的備份 ZIP，也不寫入本 App 診斷日誌。Keychain 項目設定為僅限本裝置，不能依靠換機備份搬移金鑰。您可在「設定 → Gemini 金鑰與模型」刪除金鑰；刪除本機金鑰不會撤銷 Google 上的金鑰或刪除 Google 已處理的資料，撤銷須由您在 Google 的金鑰管理頁執行。</p>
+<p>Google 的資料處理取決於適用條款：未適用付費資料條款的免費服務會使用輸入及輸出改善產品，可能經人工審查，且不得提交個人、敏感或機密資料；付費服務不將提示與回應用於改善產品，仍保留有限期安全紀錄。Gemini API 的付費服務判定為專案連結有效帳務帳戶；歐洲經濟區、瑞士及英國另適用付費資料條款。本 App 無法單憑金鑰確認您的適用條件，送出前請自行確認。<a href="https://ai.google.dev/gemini-api/terms">Gemini API 條款</a>。</p>
+<p>App 會對已取得遠端識別碼的本次音檔安排刪除請求，失敗時保留清理工作供重試；網路、金鑰或程序中斷可能使清理延後，不能保證立即刪除。Google Files API 說明上傳檔案保存 48 小時；此期限描述 Files API 的檔案保存，不代表服務的其他紀錄或依條款處理的資料也會全部於該時點刪除。<a href="https://ai.google.dev/gemini-api/docs/files">Files API 說明</a>。</p>
+<h2>選用的 Google Drive</h2>
+<p>若您連結 Google Drive，App 透過 Google 的授權畫面請求 <code>drive.file</code> 權限，處理授權權杖、帳號電子郵件（服務有回傳時）、目的資料夾及上傳狀態。權杖保存在本機 Keychain，不納入 App 備份 ZIP。</p>
+<p>自動上傳錄音、逐字稿與報告的選項預設關閉。連結帳號、選定目的資料夾並啟用對應選項後，新產生的相關檔案可排入上傳佇列；手動上傳依您的操作執行。因等待網路或重新授權而暫停的既有工作可能稍後繼續。分享前已保存的報告 HTML／PDF，也會依既有自動備份設定排隊。</p>
+<p>這是單向上傳。刪除手機內容、停用自動上傳或解除連結，不會刪除 Drive 上已存在的檔案。解除連結會嘗試向 Google 撤銷權杖及刪除本機權杖；網路或安全儲存錯誤可能使操作未完成，裝置鎖定時可能需要解鎖後再處理。您亦可在 Google 帳戶管理服務授權，並在 Drive 刪除雲端副本。雲端資料另依 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>處理。</p>
+<h2>獎勵廣告及隱私選項</h2>
+<p>App 整合 Google Mobile Ads 與 User Messaging Platform（UMP）。在廣告設定啟用的版本中，進入設定頁可向 Google 更新同意狀態及呈現必要表單；不需要先按觀看廣告才會執行此同意管理流程。您選擇觀看獎勵廣告後，App 才啟動廣告 SDK 並請求獎勵廣告。六小時期限只由實際獲得獎勵的回呼增加，關閉廣告不一定代表已取得獎勵。</p>
+<p>Google 說明廣告 SDK 可能處理 IP 位址及推估的大致位置、裝置識別碼、廣告與互動資料、效能及當機診斷資料，供廣告、分析與改善服務使用；實際處理受服務、設定及適用同意狀態影響。<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google 廣告 SDK 資料揭露</a>、<a href="https://policies.google.com/privacy">Google 隱私權政策</a>。本 App 沒有將會議錄音、逐字稿、報告或 Gemini 金鑰設定為廣告請求內容。</p>
+<p>在需要提供隱私選項時，您可於「設定 → 會員使用期限 → 廣告隱私選項」重新開啟 Google 表單。廣告素材與長度由 Google 提供，可能是影片、圖片或互動內容，不保證固定三十秒。正式版實際啟用的廣告及會員門檻，以發行者確認的版本為準。</p>
+<h2>分享、列印及備份</h2>
+<p>當您使用系統分享、另存檔案或列印，所選內容會交給您選擇的接收者、應用程式、儲存位置或印表機，其後的處理受該服務及您選擇的設定影響。</p>
+<p>App 匯出的備份 ZIP 包含會議資料及相關檔案，可能包含完整錄音與逐字稿；ZIP 本身沒有密碼加密。它排除 Gemini 金鑰、OAuth 權杖及診斷日誌，但仍應作為含私人內容的檔案妥善保管。App 手動備份與 iOS／iCloud 系統備份是不同功能；裝置及系統備份依您的 Apple 設定處理。</p>
+<h2>診斷紀錄及保存</h2>
+<p>App 在裝置保存操作事件、內部識別碼、錯誤代碼及錄音時長等技術診斷，供問題排查使用。音訊診斷包含工作階段類型、輸入／輸出埠類型、聲道及取樣率等，不保存裝置埠名稱、埠 UID 或音訊內容。日誌不記錄 Gemini 金鑰、OAuth 權杖、會議名稱、檔名或逐字稿全文；診斷內容仍可能反映使用時間與操作情況。</p>
+<p>日誌採單檔約 512 KB、最多兩檔的輪替限制，並於保留檢查時移除超過七天的紀錄。您可在診斷畫面清除紀錄。只有您使用診斷匯出／分享功能並選擇接收者時，才會由該功能將紀錄交出；Google SDK 自己的資料處理與本 App 診斷紀錄不同，見上節。</p>
+<h2>存取、刪除與聯絡</h2>
+<p>您可在 App 編輯、匯出或刪除相關會議內容，管理本機 Gemini 金鑰、Google Drive 連結及自動上傳設定。目前刪除專案／會議會從畫面列表移除並安排清理私有檔案，並非立即抹除資料庫中的所有文字；其逐字稿、報告及工作快照仍可能保留在資料庫內。單獨刪除報告也不會一併刪除已保存為附件的匯出檔。檔案刪除若遇儲存錯誤，可能需要稍後重試。</p>
+<p>已由您分享、備份、列印或上傳的副本須在各目的地另行處理；刪除本機內容不會遠端收回這些副本。</p>
+<p>若您曾主動將資料傳給發行者支援，或需要詢問本政策與適用的資料請求，請聯絡 <a href="mailto:dvlpgdapp@gmail.com">dvlpgdapp@gmail.com</a>。我們會依已確認的實際資料持有範圍及適用要求處理。政策變更將於本頁更新並標示生效日期。</p>
+</main>
+</body>
+</html>
